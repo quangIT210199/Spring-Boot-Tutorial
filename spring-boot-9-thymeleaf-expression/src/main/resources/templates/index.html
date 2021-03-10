@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Loda</title>
+
+<!--    CSS @{}: Lấy đường dẫn trên URL dựa theo context của server-->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+<!--    JS-->
+    <script th:src="@{/js/bootstrap.js}"></script>
+</head>
+<body>
+<!--    #{}: Lấy message trong i18n-->
+    <h1 th:utext="#{loda.hello}"></h1>
+
+    <a th:href="@{/profile}" class="btn btn-primary">Loda Profile</a>
+</body>
+</html>
